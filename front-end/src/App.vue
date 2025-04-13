@@ -5,6 +5,7 @@
     <ServicesSection></ServicesSection>
     <AboutSection></AboutSection>
     <ExperienceAndSkills></ExperienceAndSkills>
+    <LatestProjSection></LatestProjSection>
   </div>
 </template>
 
@@ -16,8 +17,9 @@ const HeroSection = defineAsyncComponent(()=>import('@/components/HeroSection.vu
 const ServicesSection = defineAsyncComponent(()=>import('@/components/ServicesSection.vue'))
 const AboutSection = defineAsyncComponent(()=>import('@/components/AboutSection.vue'))
 const ExperienceAndSkills = defineAsyncComponent(()=>import('@/components/ExperienceAndSkills.vue'))
+const LatestProjSection = defineAsyncComponent(()=>import('@/components/LetesProjSection.vue'))
 </script>
 
 <style scoped>
-      
+
 </style>
