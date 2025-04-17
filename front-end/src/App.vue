@@ -8,6 +8,7 @@
     <LatestProjSection></LatestProjSection>
     <ContactSection></ContactSection>
     <FooterSection></FooterSection>
+    <BackToTop></BackToTop>
   </div>
 </template>
 
@@ -22,6 +23,8 @@ const ExperienceAndSkills = defineAsyncComponent(()=>import('@/components/Experi
 const LatestProjSection = defineAsyncComponent(()=>import('@/components/LetesProjSection.vue'))
 const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'))
 const FooterSection = defineAsyncComponent(()=>import('@/components/FooterSection.vue'))
+const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'))
+
 </script>
 
 <style scoped>
