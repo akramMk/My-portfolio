@@ -1,14 +1,27 @@
 <template>
   <div class="bg-[#111827] min-h-screen">
-    <NavBar></NavBar>
-    <HeroSection></HeroSection>
-    <!-- <ServicesSection></ServicesSection> -->
-    <AboutSection></AboutSection>
-    <ExperienceAndSkills></ExperienceAndSkills>
-    <LatestProjSection></LatestProjSection>
-    <ContactSection></ContactSection>
-    <FooterSection></FooterSection>
-    <BackToTop></BackToTop>
+    <!-- wrap component in Suspense to handle Loading -->
+    <Suspense>
+      <template #default>
+        <div>
+          <!-- Wrap all Components inside a single root element -->
+          <NavBar></NavBar>
+          <HeroSection></HeroSection>
+          <!-- <ServicesSection></ServicesSection> -->
+          <AboutSection></AboutSection>
+          <ExperienceAndSkills></ExperienceAndSkills>
+          <LatestProjSection></LatestProjSection>
+          <ContactSection></ContactSection>
+          <FooterSection></FooterSection>
+          <BackToTop></BackToTop>
+        </div>
+      </template>
+      <template #fallback>
+        <div class="flex justify-center items-center min-h-screen">
+          <loadingSpinner />
+        </div>
+      </template>
+    </Suspense>
   </div>
 </template>
 
@@ -24,7 +37,7 @@ const LatestProjSection = defineAsyncComponent(()=>import('@/components/LetesPro
 const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'))
 const FooterSection = defineAsyncComponent(()=>import('@/components/FooterSection.vue'))
 const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'))
-
+import LoadingSpinner from './components/LoadingSpinner.vue';
 </script>
 
 <style scoped>
