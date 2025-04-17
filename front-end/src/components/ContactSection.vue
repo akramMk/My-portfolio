@@ -44,6 +44,18 @@
                             <p>https://www.linkedin.com/in/akram-mekbal-93857a20b/</p>
                         </div>
                     </div>
+                    <div class="flex mb-10 items-center">
+                        <div class="p-2"
+                            style="background: #111a3e; width: 50px;height: 46px; display: flex;justify-content: center; border-radius: 50%;
+                        overflow: hidden;border: 1px solid#111a3e;backdrop-filter: blur(9px);-webkit-backdrop-filter: blur(9px);">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="linkedin"
+                                class="w-6">
+                        </div>
+                        <div class="ml-5 text-white">
+                            <h4>GitHub</h4>
+                            <p>https://github.com/akramMk</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div

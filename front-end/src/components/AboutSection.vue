@@ -36,16 +36,12 @@
                 </p>
                 <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+200</h3>
-                        <p class="text-sm sm:text-base text-gray-300">Happy Client</p>
-                    </div>
-                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+300</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+50</h3>
                         <p class="text-sm sm:text-base text-gray-300">Project</p>
                     </div>
 
                     <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+7</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+2</h3>
                         <p class="text-sm sm:text-base text-gray-300"> Years Experience</p>
                     </div>
                 </div>
@@ -58,27 +54,28 @@ import { ref } from 'vue';
 const education=ref([
     {
         id:1,
-        School:'Université des Sciences et Technologies HB',
-        program:'License En Math et Informatique',
-        year:'2022'
+        School:'Université Claude Bernard Lyon 1',
+        program:'Master 2 Data Science',
+        year:'2025'
     },
     {
         id:2,
-        School:'Université des Sciences et Technologies HB',
-        program:'Master 1 Informatique Visuelle',
-        year:'2023'
-    },
-    {
-        id:3,
         School:'Université Claude Bernard Lyon 1',
         program:'Master 1 Informatique',
         year:'2024'
     },
     {
-        id:4,
-        School:'Université Claude Bernard Lyon 1',
-        program:'Master 2 Data Science',
-        year:'2025'
+        id:3,
+        School:'Université des Sciences et Technologies HB',
+        program:'Master 1 Informatique Visuelle',
+        year:'2023'
     },
+    {
+        id:4,
+        School:'Université des Sciences et Technologies HB',
+        program:'License En Math et Informatique',
+        year:'2022'
+    },
+
 ])
 </script>
